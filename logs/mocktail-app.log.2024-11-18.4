@@ -1,0 +1,24 @@
+2024-11-18 08:55:11,165 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.openapi.version" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2024-11-18 08:55:11,165 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.openapi.description" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2024-11-18 08:55:11,165 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.openapi.path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2024-11-18 08:55:11,165 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.openapi.title" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2024-11-18 08:57:09,521 INFO  [de.hs.swa.bou.DrinkResource] (executor-thread-1) Search request received: category=i, name=s, ingredient=s
+2024-11-18 08:57:09,550 SEVERE [de.hs.swa.bou.DrinkResource] (executor-thread-1) Error processing search request.: java.lang.IllegalArgumentException: Invalid category: i
+	at de.hs.swa.control.DrinkService.searchByCategory(DrinkService.java:32)
+	at de.hs.swa.control.DrinkService_ClientProxy.searchByCategory(Unknown Source)
+	at de.hs.swa.boundary.DrinkResource.searchDrinks(DrinkResource.java:65)
+	at de.hs.swa.boundary.DrinkResource_ClientProxy.searchDrinks(Unknown Source)
+	at de.hs.swa.boundary.DrinkResource$quarkusrestinvoker$searchDrinks_f4d991d3d766a8671da945cb5f946453ae5c8442.invoke(Unknown Source)
+	at org.jboss.resteasy.reactive.server.handlers.InvocationHandler.handle(InvocationHandler.java:29)
+	at io.quarkus.resteasy.reactive.server.runtime.QuarkusResteasyReactiveRequestContext.invokeHandler(QuarkusResteasyReactiveRequestContext.java:141)
+	at org.jboss.resteasy.reactive.common.core.AbstractResteasyReactiveContext.run(AbstractResteasyReactiveContext.java:147)
+	at io.quarkus.vertx.core.runtime.VertxCoreRecorder$14.runWith(VertxCoreRecorder.java:627)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2675)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2654)
+	at org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1627)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1594)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:11)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:11)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+

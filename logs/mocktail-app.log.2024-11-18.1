@@ -1,0 +1,111 @@
+2024-11-18 09:26:01,680 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.openapi.version" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2024-11-18 09:26:01,680 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.openapi.description" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2024-11-18 09:26:01,680 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.openapi.path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2024-11-18 09:26:01,680 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.openapi.title" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2024-11-18 09:26:25,765 INFO  [de.hs.swa.bou.DrinkResource] (executor-thread-1) Search request received: category=Cocktail, name=null, ingredient=null
+2024-11-18 09:27:34,448 INFO  [de.hs.swa.bou.DrinkResource] (executor-thread-1) Adding new mocktail: string
+2024-11-18 09:27:34,449 INFO  [de.hs.swa.bou.DrinkResource] (executor-thread-1) Mocktail added successfully with ID: ee4e5a02-27c7-43a3-9048-d0c791653fdc
+2024-11-18 09:27:49,585 INFO  [de.hs.swa.bou.DrinkResource] (executor-thread-1) Search request received: category=Cocktail, name=null, ingredient=null
+2024-11-18 09:28:06,109 INFO  [de.hs.swa.bou.DrinkResource] (executor-thread-1) Fetching all mocktails.
+2024-11-18 09:28:15,098 INFO  [de.hs.swa.bou.DrinkResource] (executor-thread-1) Fetching mocktail with ID: ee4e5a02-27c7-43a3-9048-d0c791653fdc
+2024-11-18 09:28:15,099 INFO  [de.hs.swa.bou.DrinkResource] (executor-thread-1) Mocktail fetched successfully with ID: ee4e5a02-27c7-43a3-9048-d0c791653fdc
+2024-11-18 09:31:57,433 WARN  [io.qua.config] (Test runner thread) Unrecognized configuration key "quarkus.openapi.version" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2024-11-18 09:31:57,433 WARN  [io.qua.config] (Test runner thread) Unrecognized configuration key "quarkus.openapi.description" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2024-11-18 09:31:57,433 WARN  [io.qua.config] (Test runner thread) Unrecognized configuration key "quarkus.openapi.path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2024-11-18 09:31:57,434 WARN  [io.qua.config] (Test runner thread) Unrecognized configuration key "quarkus.openapi.title" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2024-11-18 09:31:58,651 ERROR [io.qua.test] (Test runner thread) [39m==================== TEST REPORT #1[39m ====================
+2024-11-18 09:31:58,653 ERROR [io.qua.test] (Test runner thread) [91mTest ExampleResourceTest#testAddMocktail() failed 
+[39m: java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <404>.
+
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at de.hs.swa.ExampleResourceTest.testAddMocktail(ExampleResourceTest.java:35)
+
+2024-11-18 09:31:58,653 ERROR [io.qua.test] (Test runner thread) [91mTest ExampleResourceTest#testEditMocktail() failed 
+[39m: java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <404>.
+
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at de.hs.swa.ExampleResourceTest.testEditMocktail(ExampleResourceTest.java:98)
+
+2024-11-18 09:31:58,654 ERROR [io.qua.test] (Test runner thread) [91mTest ExampleResourceTest#testDeleteMocktail() failed 
+[39m: java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <404>.
+
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at de.hs.swa.ExampleResourceTest.testDeleteMocktail(ExampleResourceTest.java:144)
+
+2024-11-18 09:31:58,654 ERROR [io.qua.test] (Test runner thread) [91mTest ExampleResourceTest#testGetMocktailById() failed 
+[39m: java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <404>.
+
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at de.hs.swa.ExampleResourceTest.testGetMocktailById(ExampleResourceTest.java:69)
+
+2024-11-18 09:31:58,654 ERROR [io.qua.test] (Test runner thread) [91mTest ExampleResourceTest#testGetAllMocktails() failed 
+[39m: java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at de.hs.swa.ExampleResourceTest.testGetAllMocktails(ExampleResourceTest.java:46)
+
+2024-11-18 09:31:58,656 ERROR [io.qua.test] (Test runner thread) [39m>>>>>>>>>>>>>>>>>>>> [91mSummary:[39m <<<<<<<<<<<<<<<<<<<<
+de.hs.swa.ExampleResourceTest#testAddMocktail(ExampleResourceTest.java:35) [91mExampleResourceTest#testAddMocktail()[39m 1 expectation failed.
+Expected status code <201> but was <404>.
+de.hs.swa.ExampleResourceTest#testEditMocktail(ExampleResourceTest.java:98) [91mExampleResourceTest#testEditMocktail()[39m 1 expectation failed.
+Expected status code <201> but was <404>.
+de.hs.swa.ExampleResourceTest#testDeleteMocktail(ExampleResourceTest.java:144) [91mExampleResourceTest#testDeleteMocktail()[39m 1 expectation failed.
+Expected status code <201> but was <404>.
+de.hs.swa.ExampleResourceTest#testGetMocktailById(ExampleResourceTest.java:69) [91mExampleResourceTest#testGetMocktailById()[39m 1 expectation failed.
+Expected status code <201> but was <404>.
+de.hs.swa.ExampleResourceTest#testGetAllMocktails(ExampleResourceTest.java:46) [91mExampleResourceTest#testGetAllMocktails()[39m 1 expectation failed.
+Expected status code <200> but was <404>.
+2024-11-18 09:31:58,657 ERROR [io.qua.test] (Test runner thread) [39m>>>>>>>>>>>>>>>>>>>> [91m5 TESTS FAILED[39m <<<<<<<<<<<<<<<<<<<<
+2024-11-18 09:31:59,092 ERROR [io.qua.test] (Test runner thread) [39m==================== TEST REPORT #2[39m ====================
+2024-11-18 09:31:59,093 ERROR [io.qua.test] (Test runner thread) [91mTest ExampleResourceTest#testAddMocktail() failed 
+[39m: java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <404>.
+
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at de.hs.swa.ExampleResourceTest.testAddMocktail(ExampleResourceTest.java:35)
+
+2024-11-18 09:31:59,093 ERROR [io.qua.test] (Test runner thread) [91mTest ExampleResourceTest#testEditMocktail() failed 
+[39m: java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <404>.
+
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at de.hs.swa.ExampleResourceTest.testEditMocktail(ExampleResourceTest.java:98)
+
+2024-11-18 09:31:59,093 ERROR [io.qua.test] (Test runner thread) [91mTest ExampleResourceTest#testDeleteMocktail() failed 
+[39m: java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <404>.
+
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at de.hs.swa.ExampleResourceTest.testDeleteMocktail(ExampleResourceTest.java:144)
+
+2024-11-18 09:31:59,093 ERROR [io.qua.test] (Test runner thread) [91mTest ExampleResourceTest#testGetMocktailById() failed 
+[39m: java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <404>.
+
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at de.hs.swa.ExampleResourceTest.testGetMocktailById(ExampleResourceTest.java:69)
+
+2024-11-18 09:31:59,093 ERROR [io.qua.test] (Test runner thread) [91mTest ExampleResourceTest#testGetAllMocktails() failed 
+[39m: java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at de.hs.swa.ExampleResourceTest.testGetAllMocktails(ExampleResourceTest.java:46)
+
+2024-11-18 09:31:59,094 ERROR [io.qua.test] (Test runner thread) [39m>>>>>>>>>>>>>>>>>>>> [91mSummary:[39m <<<<<<<<<<<<<<<<<<<<
+de.hs.swa.ExampleResourceTest#testAddMocktail(ExampleResourceTest.java:35) [91mExampleResourceTest#testAddMocktail()[39m 1 expectation failed.
+Expected status code <201> but was <404>.
+de.hs.swa.ExampleResourceTest#testEditMocktail(ExampleResourceTest.java:98) [91mExampleResourceTest#testEditMocktail()[39m 1 expectation failed.
+Expected status code <201> but was <404>.
+de.hs.swa.ExampleResourceTest#testDeleteMocktail(ExampleResourceTest.java:144) [91mExampleResourceTest#testDeleteMocktail()[39m 1 expectation failed.
+Expected status code <201> but was <404>.
+de.hs.swa.ExampleResourceTest#testGetMocktailById(ExampleResourceTest.java:69) [91mExampleResourceTest#testGetMocktailById()[39m 1 expectation failed.
+Expected status code <201> but was <404>.
+de.hs.swa.ExampleResourceTest#testGetAllMocktails(ExampleResourceTest.java:46) [91mExampleResourceTest#testGetAllMocktails()[39m 1 expectation failed.
+Expected status code <200> but was <404>.
+2024-11-18 09:31:59,094 ERROR [io.qua.test] (Test runner thread) [39m>>>>>>>>>>>>>>>>>>>> [91m5 TESTS FAILED[39m <<<<<<<<<<<<<<<<<<<<
